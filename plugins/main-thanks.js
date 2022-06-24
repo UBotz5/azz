@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 let name = await conn.getName(m.sender)
   let wm = global.wm
-krizyn = {
+hyzer = {
     key : {
   remoteJid: 'status@broadcast',
   participant : '0@s.whatsapp.net'
@@ -14,7 +14,7 @@ krizyn = {
         }
        } 
      }
-conn.sendImageAsSticker(m.chat, 'https://telegra.ph/file/06a27a93b66f63a5a067e.jpg', krizyn, { packname: "Krizyn Ofc", author: "@mhdfakri_" })
+conn.sendImageAsSticker(m.chat, 'https://telegra.ph/file/06a27a93b66f63a5a067e.jpg', hyzer, { packname: "© AzzBotz", author: "ᴿ᭄ AZZ ×፝֟͜×" })
 }
 
 handler.customPrefix = /^(Terima Kasih|Thanks|tq)$/i
