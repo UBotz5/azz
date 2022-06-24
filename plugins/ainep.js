@@ -1,14 +1,13 @@
-let handler = async (m, { conn }) => {
-let caption = `m.reply('Iya Ada Apa Sayyy' + readMore + 'yton🗿')`
-
-conn.sendBut( m.chat, caption, ``, `Wkwk`,  m)
-
+let fs = require('fs')
+let handler = async (m) => {
+let helloaine = fs.readFileSync('./mp3/WhatsApp-Audio-2021-03-18-at-21.37.59.opus')
+conn.sendFile(m.chat, helloaine, '', '', m, true)
 }
 
 handler.customPrefix = /^(p|pp|ppp|pe|pee|pee)$/i
 handler.command = new RegExp
 
-handler.limit = false
+handler.limit = true
 handler.mods = false 
 handler.premium = false
 handler.group = false 
