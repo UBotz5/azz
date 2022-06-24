@@ -16,6 +16,6 @@ conn.reply(str)
 
        }
        
-handler.customPrefix = /^(p|hay|hey|helo)/i
+handler.customPrefix = /^(hay|hey|helo)/i
 handler.command = new RegExp
 module.exports = handler
