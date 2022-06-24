@@ -1,5 +1,6 @@
-let handler = async (m, { conn }) => {
-let caption = `
+let fetch = require('node-fetch')
+let handler = async (m, { conn, text }) => {
+  let ext= `
 ⋱ ⋮ ⋰
 ⋯ ◯ ⋯ ︵ 　　　　　　^v^
 ¸︵︵( ░░ )︵.︵.︵
