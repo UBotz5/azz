@@ -1,6 +1,5 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, text }) => {
-  let ext= `
+let handler = async (m, { conn }) => {
+let str = `
 ⋱ ⋮ ⋰
 ⋯ ◯ ⋯ ︵ 　　　　　　^v^
 ¸︵︵( ░░ )︵.︵.︵
@@ -11,12 +10,12 @@ let handler = async (m, { conn, text }) => {
 ║┏┓║┏━╣┗╣┗╣╰╯║╠╣
 ╚┛┗╩━━╩━╩━╩━━╝╚╝
 ♪♫•*¨*•.¸¸❤¸¸.•*¨*•♫♪
-`
-
-conn.sendButton( m.chat, caption, `hallo juga`, `hallo juga`, `.👍`, m)
+`.trim()
+conn.sendBut(m.chat, str, wm, 'Hello juga', 'hello juga',m)
+conn.reply(str)
 
        }
        
-handler.customPrefix = /^(hallo|hay|p)/i
+handler.customPrefix = /^(p|hay|hey|helo)/i
 handler.command = new RegExp
 module.exports = handler
